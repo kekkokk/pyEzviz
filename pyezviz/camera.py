@@ -151,7 +151,7 @@ class EzvizCamera:
             if self._device["CONNECTION"].get("localRtspPort", "554") != 0
             else "554",
             "supported_channels": self._device["deviceInfos"].get("channelNumber"),
-            "detection_sensibility": self._detection_sensibility(),
+            "detection_sensibility": "Unknown",
             "battery_level": self._device["STATUS"]
             .get("optionals", {})
             .get("powerRemaining"),
